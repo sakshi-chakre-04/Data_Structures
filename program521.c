@@ -19,7 +19,7 @@ int main()
         printf("File succesfully opned\n");
 
         printf("Data form file is : \n");
-        
+        // e.g. of well and bucket -> at last water finish -> value 0
         while((iRet = read(fd,Buffer,sizeof(Buffer))) != 0)
         {
             write(1,Buffer,iRet);      

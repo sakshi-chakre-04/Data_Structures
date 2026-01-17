@@ -22,7 +22,7 @@ int main()
 
         printf("Data from file is : \n");
 
-        write(1,Buffer,iRet);
+        write(1,Buffer,iRet);//as stdio doesn't erase
         
         printf("\n");
         
