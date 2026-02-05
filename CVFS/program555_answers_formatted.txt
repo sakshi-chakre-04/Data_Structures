@@ -1,0 +1,780 @@
+================================================================================
+                          PROGRAM555.CPP - COMPREHENSIVE ANSWERS
+                          Customised Virtual File System (CVFS)
+================================================================================
+
+TABLE OF CONTENTS
+==================
+1. Project Overview
+2. General Project Questions 
+3. Internal Working of System Calls 
+4. Use of Commands 
+
+================================================================================
+SECTION 1: PROJECT OVERVIEW
+================================================================================
+
+CUSTOMISED VIRTUAL FILE SYSTEM (CVFS)
+-------------------------------------
+
+This project is designed to emulate all functionalities provided by traditional 
+file systems, offering a hands-on understanding of their internal workings.
+
+PLATFORM REQUIRED:
+• Windows NT platform OR Linux Distributions
+
+ARCHITECTURAL REQUIREMENT:
+• Intel 32-bit processor
+
+USER INTERFACE:
+• Command User Interface (CLI)
+
+SDK USED:
+• None
+
+TECHNOLOGY USED:
+• System Programming using C
+
+ABOUT VIRTUAL FILE SYSTEM:
+• Emulates all data structures used by an operating system to manage file 
+  system-oriented tasks.
+• It is virtual because all records are maintained in Primary storage (in-memory).
+• Creates all data structures required for File Subsystems, including:
+  • Inode Inode Table
+  • File Table
+  • UAREA (User Area)
+  • User File Descriptor Table
+  • Superblock
+  • Disk Inode List Block
+  • Data Block
+  • Boot Block
+• Provides implementations of necessary system calls and commands like:
+  • Open, Close, Read, Write, Lseek, Create, RM (Remove)
+  • LS (List), Stat, Fstat
+• Uses custom data structures by referring to the Algorithms of the UNIX 
+  operating system.
+• Offers an overview of UFS (UNIX File System) concepts on any platform.
+
+================================================================================
+SECTION 2: GENERAL PROJECT QUESTIONS
+================================================================================
+
+1. What is mean by file system?
+------------------------------
+
+A file system is a method and data structure that an operating system uses to 
+control how data is stored and retrieved on storage devices. It organizes files 
+into directories, manages file metadata (permissions, timestamps, size), and 
+maintains the mapping between file names and their physical locations on disk. 
+Without a file system, data would be stored as an unstructured block of 
+information with no way to distinguish between different files.
+
+2. Which file systems are used by Linux and Windows operating systems?
+------------------------------------------------------------------
+
+LINUX:
+• Primarily uses Ext4 (Fourth Extended Filesystem)
+• Other common Linux file systems include Ext2, Ext3, XFS, Btrfs, ZFS, and JFS
+
+WINDOWS:
+• Primarily uses NTFS (New Technology File System)
+• Older versions used FAT32 and FAT16
+
+3. What are the parts of file system?
+----------------------------------
+
+A typical file system consists of:
+• Boot Block: Contains system boot information
+• Superblock: Stores file system metadata (total blocks, free blocks, inode count)
+• Inode Table: Contains file metadata (permissions, ownership, size, timestamps, 
+  block pointers)
+• Data Blocks: Store actual file content
+• Directory Blocks: Map filenames to inode numbers
+
+4. Explain UAREA and its contents.
+----------------------------------
+
+UAREA (User Area) is a process-specific structure that maintains information 
+about files opened by a particular process. In this CVFS project, UAREA contains:
+
+• ProcessName[20]: Name of the process
+• UFDT[MAXOPENFILES]: User File Descriptor Table - an array of pointers to 
+  FileTable structures
+
+It acts as a per-process file descriptor table, tracking which files each 
+process has opened.
+
+5. Explain use of File Table and its contents.
+----------------------------------------------
+
+The File Table represents an opened file instance and maintains the current 
+state of file operations. It contains:
+
+• ReadOffset: Current position for read operations
+• WriteOffset: Current position for write operations
+• Mode: File access mode (READ, WRITE, READ+WRITE)
+• ptrinode: Pointer to the associated inode
+
+It bridges the gap between the process's file descriptor and the file's inode.
+
+6. Explain use of InCore inode Table and its use.
+-----------------------------------------------
+
+The InCore inode table is a kernel-level data structure that maintains 
+in-memory copies of frequently accessed inodes. It provides:
+
+• Faster access to inode information without disk I/O
+• Reference counting for open files
+• Locking mechanisms for concurrent access
+• Caching of recently used inode data
+
+This improves file system performance by reducing disk access.
+
+7. What is mean by inode?
+-------------------------
+
+An inode (index node) is a data structure that stores metadata about a file or 
+directory. It contains all information about a file except its name and actual 
+data content. Each file has a unique inode number that identifies it within 
+the file system.
+
+8. What are the contents of Super block?
+---------------------------------------
+
+The Superblock contains file system-wide metadata:
+• Total number of inodes and blocks
+• Number of free inodes and blocks
+• Size of file system blocks
+• File system type and version
+• Mount point information
+• File system state flags
+• Last mount time and check time
+
+9. What are the types of files?
+------------------------------
+
+Common file types include:
+• Regular files: Normal data files
+• Directory files: Special files that contain directory entries
+• Character device files: Devices that handle data character by character
+• Block device files: Devices that handle data in blocks
+• Symbolic links: References to other files
+• Named pipes (FIFOs): Inter-process communication channels
+• Socket files: Network communication endpoints
+
+10. What are the contents of inode?
+----------------------------------
+
+An inode typically contains:
+• File mode (type and permissions)
+• Owner ID and group ID
+• File size in bytes
+• Timestamps (last access, modification, creation)
+• Link count (number of hard links)
+• Pointers to data blocks
+• File system-specific attributes
+
+11. What is use of directory file?
+----------------------------------
+
+A directory file serves as a mapping between human-readable filenames and 
+their corresponding inode numbers. It contains directory entries, each 
+consisting of:
+• Filename
+• Inode number
+• File type
+
+This allows the file system to locate files by name and maintain the 
+hierarchical directory structure.
+
+12. How operating system maintains security for files?
+-----------------------------------------------------
+
+The OS maintains file security through:
+• Permissions: Read, write, and execute permissions for owner, group, and others
+• Ownership: User ID and group ID associated with each file
+• Access Control Lists (ACLs): More granular permission control
+• File attributes: Hidden, system, archive flags
+• Encryption: Protecting file content from unauthorized access
+• Audit logging: Tracking file access attempts
+
+13. What happens when user wants to open the file?
+--------------------------------------------------
+
+When a user opens a file:
+1. The system checks if the file exists and verifies permissions
+2. An available file descriptor is allocated from the process's UAREA
+3. A FileTable entry is created and initialized
+4. The file's inode is loaded into memory (if not already present)
+5. The FileTable is linked to the inode
+6. Read/write offsets are set to 0 (or based on open mode)
+7. The file descriptor is returned to the user process
+
+14. What happens when user calls lseek system call?
+--------------------------------------------------
+
+When lseek is called:
+1. The system validates the file descriptor and offset parameters
+2. The FileTable entry for the file is located
+3. The read/write offset is updated to the new position
+4. The new offset position is returned to the caller
+5. Subsequent read/write operations will start from this new position
+
+This allows random access within files without reading intermediate data.
+
+15. What is the difference between library function and system call?
+---------------------------------------------------------------
+
+LIBRARY FUNCTIONS:
+• Execute in user space
+• Provide higher-level abstractions
+• May use multiple system calls internally
+• Faster for simple operations
+• Examples: printf(), fopen(), strcpy()
+• No context switch required
+
+SYSTEM CALLS:
+• Transition from user mode to kernel mode
+• Provide direct access to OS services
+• Single, specific operation
+• More overhead due to context switch
+• Examples: read(), write(), open(), stat()
+• Kernel-level operations
+
+IN PROGRAM555.CPP CONTEXT:
+• Uses library functions like printf(), strcpy(), malloc()
+• Implements its own versions of system call functionality like CreateFile(), 
+  WriteFile(), UnlinkFile()
+• These custom functions simulate system call behavior within the virtual file 
+  system
+
+16. What is the use of this project?
+-----------------------------------
+
+PRIMARY USES:
+• Educational Purpose: Demonstrates file system concepts and implementation
+• Learning Tool: Helps understand OS-level file operations
+• Prototype Implementation: Shows how virtual file systems work
+• System Programming Practice: Provides hands-on experience with file system design
+• Concept Demonstration: Illustrates data structures like inodes, file tables, 
+  and UAREA
+
+SPECIFIC FEATURES:
+• Custom Virtual File System (CVFS) implementation
+• File creation, listing, and deletion operations
+• Permission management system
+• Command-line interface similar to Unix shell
+• Memory-based file storage simulation
+
+17. What are difficulties that you faced in this project?
+-----------------------------------------------------
+
+IMPLEMENTATION CHALLENGES:
+1. Memory Management: Proper allocation and deallocation of dynamic structures for 
+   inodes and file buffers
+2. Data Structure Design: Efficient organization of linked lists for inode 
+   management
+3. Error Handling: Comprehensive error checking and recovery mechanisms
+4. Command Parsing: Robust parsing of user commands with various formats and 
+   parameters
+5. Cross-Platform Compatibility: Handling differences between Windows and Unix 
+   systems (clear screen commands)
+6. File Descriptor Management: Managing UFDT entries and ensuring proper cleanup
+7. Permission System: Implementing and enforcing file access permissions
+8. Reference Counting: Tracking file references to prevent memory leaks
+
+CODE-SPECIFIC ISSUES:
+• Line 687: Typo in InputBuffer (should be InpuutBuffer)
+• Line 545: Typo in Filename (should be FileName)
+• Incomplete implementation of WriteFile() function
+• Missing error handling in some command branches
+
+18. Is there any improvement needed in this project?
+--------------------------------------------------
+
+REQUIRED IMPROVEMENTS:
+1. COMPLETE FILE OPERATIONS:
+   • Implement actual WriteFile() functionality
+   • Add ReadFile() function
+   • Implement stat command
+   • Add chmod functionality
+
+2. ENHANCED FEATURES:
+   • Directory support and navigation
+   • Persistent storage (save to disk)
+   • Larger file size support
+   • More sophisticated permission system
+
+3. CODE QUALITY:
+   • Fix typos and variable name inconsistencies
+   • Add comprehensive error handling
+   • Implement missing functionality in WriteFile()
+   • Add input validation
+
+4. PERFORMANCE OPTIMIZATION:
+   • Use hash tables for faster file lookup
+   • Implement memory pools
+   • Optimize buffer management
+
+5. USER EXPERIENCE:
+   • Add more commands (cd, pwd, mkdir, etc.)
+   • Better error messages
+   • Command history and completion
+
+19. What are the types of File Systems?
+---------------------------------------
+
+TRADITIONAL FILE SYSTEMS:
+• Disk-based: Ext4, NTFS, FAT32, HFS+
+• Network: NFS, SMB/CIFS, AFP
+• Distributed: GFS, Ceph, Lustre
+• Virtual: tmpfs, procfs, sysfs
+
+SPECIALIZED FILE SYSTEMS:
+• Database: Btrfs, ZFS
+• Embedded: JFFS2, YAFFS
+• Version Control: GitFS, Mercurial
+• Cloud: S3FS, Google Drive FS
+
+IN CVFS CONTEXT:
+• Virtual File System: Memory-based simulation
+• Custom Implementation: Designed for educational purposes
+• Single-Process: No multi-user support
+
+20. What is the use of File Table?
+----------------------------------
+
+PURPOSE IN PROGRAM555.CPP:
+struct FileTable
+{
+    int ReadOffset;      // Current read position
+    int WriteOffset;     // Current write position
+    int Mode;           // File access mode
+    PINODE ptrinode;    // Pointer to associated inode
+};
+
+KEY FUNCTIONS:
+1. State Management: Tracks current file positions for read/write operations
+2. Access Control: Stores file access permissions and modes
+3. Resource Linking: Connects file descriptors to inodes
+4. Offset Tracking: Maintains separate read and write cursors
+5. Mode Information: Stores how the file was opened (read/write/execute)
+
+IN CVFS IMPLEMENTATION:
+• Each open file has a FileTable entry in UFDT
+• Enables multiple files to be open simultaneously
+• Provides context for file operations
+• Manages file-specific state information
+
+21. Which things you refer to develop this project?
+--------------------------------------------------
+
+TECHNICAL REFERENCES:
+1. Operating System Concepts: Understanding of file system architecture
+2. Unix/Linux File Systems: Study of ext2/ext3/ext4 implementations
+3. System Programming: Knowledge of file I/O operations
+4. Data Structures: Linked lists, arrays, and memory management
+5. C Programming: Advanced C concepts including pointers and memory allocation
+
+ACADEMIC RESOURCES:
+• "Operating System Concepts" by Silberschatz, Galvin, and Gagne
+• "Advanced UNIX Programming" by W. Richard Stevens
+• "The Design of the UNIX Operating System" by Maurice J. Bach
+• Linux kernel source code for file system implementation
+
+DESIGN INSPIRATION:
+• Unix V6/V7 file system design
+• Linux Virtual File System (VFS) layer
+• Simple File System (SFS) implementation
+• Educational file system projects
+
+22. On which platform can we execute this project?
+-------------------------------------------------
+
+SUPPORTED PLATFORMS:
+1. WINDOWS:
+   • Uses system("cls") for clear screen
+   • Compatible with MinGW/MSVC compilers
+   • Standard C library support
+
+2. LINUX/UNIX:
+   • Uses system("clear") for clear screen
+   • GCC compiler compatible
+   • POSIX compliant
+
+3. MACOS:
+   • Unix-based, similar to Linux
+   • Clang/GCC compatible
+   • POSIX support
+
+COMPILATION REQUIREMENTS:
+• C compiler (GCC, Clang, MSVC)
+• Standard C library
+• No external dependencies
+• Cross-platform compatibility through conditional compilation
+
+EXECUTION ENVIRONMENT:
+• Command-line interface
+• Terminal/console access
+• Sufficient memory for file buffers
+• File system permissions for execution
+
+================================================================================
+SECTION 2: INTERNAL WORKING OF SYSTEM CALLS
+================================================================================
+
+1. open() SYSTEM CALL
+---------------------
+
+STANDARD IMPLEMENTATION:
+1. Path Resolution: Convert pathname to inode
+2. Permission Check: Verify access rights
+3. File Descriptor Allocation: Find available FD
+4. File Table Entry Creation: Create system-wide entry
+5. Inode Reference: Increment reference count
+6. Return FD: Return descriptor to process
+
+CVFS IMPLEMENTATION (CreateFile):
+int CreateFile(char *name, int permission)
+{
+    // 1. Parameter validation
+    if(name == NULL || permission < 1 || permission > 3)
+        return ERR_INVALID_PARAMETER;
+    
+    // 2. Check available inodes
+    if(superobj.FreeInodes == 0)
+        return ERR_NO_INODES;
+    
+    // 3. Check if file already exists
+    if(IsFileExist(name) == true)
+        return ERR_FILE_ALREADY_EXIST;
+    
+    // 4. Find empty inode
+    while(temp != NULL && temp->FileType != 0)
+        temp = temp->next;
+    
+    // 5. Find empty UFDT entry
+    for(i = 3; i < MAXOPENFILES; i++)
+        if(uareaobj.UFDT[i] == NULL) break;
+    
+    // 6. Allocate and initialize structures
+    uareaobj.UFDT[i] = (PFILETABLE)malloc(sizeof(FILETABLE));
+    // Initialize FileTable and Inode
+    
+    return i; // Return file descriptor
+}
+
+2. close() SYSTEM CALL
+---------------------
+
+STANDARD IMPLEMENTATION:
+1. FD Validation: Verify descriptor validity
+2. UAREA Release: Mark FD as available
+3. File Table Update: Decrement reference count
+4. Inode Management: Decrement inode reference
+5. Resource Cleanup: Free memory if reference count is 0
+
+CVFS IMPLEMENTATION:
+Not explicitly implemented, but would involve:
+• Freeing FileTable entry
+• Resetting inode fields
+• Updating UFDT to NULL
+• Incrementing free inode count
+
+3. read() SYSTEM CALL
+--------------------
+
+STANDARD IMPLEMENTATION:
+1. Parameter Validation: Check FD and buffer
+2. File Table Lookup: Find file table entry
+3. Permission Check: Verify read permissions
+4. Offset Management: Use current read offset
+5. Data Transfer: Copy from file to buffer
+6. Offset Update: Increment read offset
+7. Return Count: Return bytes read
+
+CVFS IMPLEMENTATION:
+Not fully implemented in current code. Would use ReadOffset from FileTable, 
+copy data from inode's Buffer, update offset and return count.
+
+4. write() SYSTEM CALL
+---------------------
+
+STANDARD IMPLEMENTATION:
+1. Parameter Validation: Check FD and data
+2. File Table Lookup: Find file table entry
+3. Permission Check: Verify write permissions
+4. Offset Management: Use current write offset
+5. Data Transfer: Copy from buffer to file
+6. Size Update: Update file size if needed
+7. Offset Update: Increment write offset
+
+CVFS IMPLEMENTATION (WriteFile - Incomplete):
+int WriteFile(int fd, char *data, int size)
+{
+    printf("File descriptor : %d\n",fd);
+    printf("Data that we want to write : %s\n",data);
+    printf("Number of bytes to write : %d\n",size);
+    return 0; // Incomplete implementation
+}
+
+SHOULD IMPLEMENT:
+• Validate file descriptor
+• Check write permissions
+• Copy data to inode buffer
+• Update file size and offsets
+• Return bytes written
+
+5. lseek() SYSTEM CALL
+---------------------
+
+STANDARD IMPLEMENTATION:
+1. Parameter Validation: Check FD and offset
+2. File Table Lookup: Find file table entry
+3. Offset Calculation:
+   • SEEK_SET: Set to specified position
+   • SEEK_CUR: Add to current position
+   • SEEK_END: Add to file size
+4. Boundary Check: Ensure offset is valid
+5. Offset Update: Update file table offsets
+6. Return Position: Return new offset
+
+CVFS IMPLEMENTATION:
+Not implemented but would involve:
+• Updating ReadOffset and WriteOffset in FileTable
+• Handling different seek modes
+• Creating sparse files if seeking beyond end
+
+6. stat() SYSTEM CALL
+--------------------
+
+STANDARD IMPLEMENTATION:
+1. Path Resolution: Convert pathname to inode
+2. Permission Check: Verify search permissions
+3. Inode Access: Read inode data
+4. Structure Population: Fill stat structure:
+   • File type and permissions
+   • Owner and group IDs
+   • File size and timestamps
+   • Inode number and link count
+5. Return Status: Success/error indication
+
+CVFS IMPLEMENTATION:
+Not implemented but would:
+• Find inode by filename
+• Copy inode data to stat structure
+• Return file metadata
+
+7. chmod() SYSTEM CALL
+---------------------
+
+STANDARD IMPLEMENTATION:
+1. Path Resolution: Convert pathname to inode
+2. Ownership Check: Verify process ownership or root
+3. Permission Validation: Validate new permissions
+4. Inode Update:
+   • Lock inode
+   • Update permission field
+   • Mark as dirty
+   • Update timestamps
+5. Unlock: Release inode lock
+6. Return Status: Success/error
+
+CVFS IMPLEMENTATION:
+Not implemented but would:
+• Find inode by filename
+• Update Permission field
+• Update modification timestamp
+
+8. unlink() SYSTEM CALL
+----------------------
+
+STANDARD IMPLEMENTATION:
+1. Path Resolution: Convert pathname to inode
+2. Directory Permission Check: Verify write access to directory
+3. Directory Entry Removal: Remove filename from directory
+4. Link Count Decrement: Decrease inode link count
+5. File Deletion: If link count is 0:
+   • Mark inode as deleted
+   • Free data blocks
+   • Free inode
+6. Directory Update: Mark directory as modified
+
+CVFS IMPLEMENTATION (UnlinkFile):
+int UnlinkFile(char *name)
+{
+    // 1. Parameter validation
+    if(name == NULL)
+        return ERR_INVALID_PARAMETER;
+    
+    // 2. Search UFDT for file
+    for(i = 0; i < MAXOPENFILES; i++)
+    {
+        if(uareaobj.UFDT[i] != NULL && 
+           strcmp(name, uareaobj.UFDT[i]->ptrinode->FileName) == 0)
+        {
+            // 3. Free file buffer
+            free(uareaobj.UFDT[i]->ptrinode->Buffer);
+            uareaobj.UFDT[i]->ptrinode->Buffer = NULL;
+            
+            // 4. Reset inode fields
+            uareaobj.UFDT[i]->ptrinode->FileSize = 0;
+            uareaobj.UFDT[i]->ptrinode->ActualFileSize = 0;
+            uareaobj.UFDT[i]->ptrinode->FileType = 0;
+            uareaobj.UFDT[i]->ptrinode->ReferenceCount = 0;
+            uareaobj.UFDT[i]->ptrinode->Permission = 0;
+            
+            // 5. Clear filename
+            memset(uareaobj.UFDT[i]->ptrinode->FileName, '\0', 
+                   sizeof(uareaobj.UFDT[i]->ptrinode->FileName));
+            
+            // 6. Free file table entry
+            free(uareaobj.UFDT[i]);
+            uareaobj.UFDT[i] = NULL;
+            
+            // 7. Increment free inodes
+            superobj.FreeInodes++;
+            
+            break;
+        }
+    }
+    return EXECUTE_SUCCESS;
+}
+
+================================================================================
+SECTION 3: USE OF COMMANDS
+================================================================================
+
+1. ls COMMAND
+------------
+PURPOSE: List directory contents
+CVFS IMPLEMENTATION: LsFile() function
+OUTPUT: Shows inode number, filename, and actual file size
+USAGE: ls
+
+2. ls -l COMMAND
+---------------
+PURPOSE: Long format listing with detailed information
+CVFS STATUS: Not fully implemented
+SHOULD SHOW: Permissions, owner, size, timestamps
+CURRENT: Basic listing only
+
+3. ls -a COMMAND
+---------------
+PURPOSE: Show all files including hidden files
+CVFS STATUS: Not implemented
+HIDDEN FILES: Files starting with '.'
+IMPLEMENTATION: Would need to check filename patterns
+
+4. rm COMMAND
+-----------
+PURPOSE: Remove files
+CVFS IMPLEMENTATION: unlink command
+FUNCTION: UnlinkFile()
+USAGE: unlink filename
+
+5. cat COMMAND
+------------
+PURPOSE: Display file contents
+CVFS STATUS: Not implemented
+WOULD NEED: ReadFile() function
+USAGE: cat filename
+
+6. cd COMMAND
+-----------
+PURPOSE: Change directory
+CVFS STATUS: Not implemented
+LIMITATION: No directory support in current version
+WOULD NEED: Directory structure and current directory tracking
+
+7. chmod COMMAND
+-------------
+PURPOSE: Change file permissions
+CVFS STATUS: Not implemented
+WOULD NEED: Permission modification function
+USAGE: chmod filename permissions
+
+8. cp COMMAND
+----------
+PURPOSE: Copy files
+CVFS STATUS: Not implemented
+WOULD NEED: Read and write operations
+USAGE: cp source destination
+
+9. df COMMAND
+----------
+PURPOSE: Display disk space usage
+CVFS STATUS: Not implemented
+WOULD SHOW: Total and free inodes, memory usage
+IMPLEMENTATION: Display SuperBlock information
+
+10. find COMMAND
+-------------
+PURPOSE: Search for files
+CVFS STATUS: Not implemented
+WOULD NEED: Pattern matching and recursive search
+USAGE: find pattern
+
+11. grep COMMAND
+-------------
+PURPOSE: Search within files
+CVFS STATUS: Not implemented
+WOULD NEED: File reading and pattern matching
+USAGE: grep pattern filename
+
+12. ln COMMAND
+-----------
+PURPOSE: Create links between files
+CVFS STATUS: Not implemented
+WOULD NEED: Link count management
+USAGE: ln source linkname
+
+13. mkdir COMMAND
+--------------
+PURPOSE: Create directories
+CVFS STATUS: Not implemented
+LIMITATION: No directory support
+WOULD NEED: Directory file type and structure
+
+14. pwd COMMAND
+-----------
+PURPOSE: Print working directory
+CVFS STATUS: Not implemented
+LIMITATION: No directory concept
+WOULD NEED: Current directory tracking
+
+15. touch COMMAND
+-------------
+PURPOSE: Create empty files or update timestamps
+CVFS STATUS: Partially implemented via creat
+USAGE: creat filename permissions
+LIMITATION: No timestamp updates
+
+16. uname COMMAND
+--------------
+PURPOSE: Display system information
+CVFS STATUS: Not implemented
+WOULD SHOW: System type, version, etc.
+IMPLEMENTATION: System-specific information
+
+17. stat COMMAND
+------------
+PURPOSE: Display file status
+CVFS STATUS: Not implemented
+WOULD SHOW: Detailed file information
+IMPLEMENTATION: Similar to stat() system call
+
+18. man COMMAND
+-----------
+PURPOSE: Display manual pages
+CVFS IMPLEMENTATION: ManPageDisplay() function
+SUPPORTED COMMANDS: ls, man, exit, clear
+USAGE: man commandname
+
+19. mkfs COMMAND
+-------------
+PURPOSE: Create file system
+CVFS IMPLEMENTATION: StartAuxillaryDataInitilisation()
+FUNCTION: Initializes SuperBlock, DILB, and UAREA
+USAGE: Automatic on program start
+
