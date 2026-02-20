@@ -1,1 +1,0 @@
-// Kernel utility suite project codes from program 763-775
