@@ -1,0 +1,586 @@
+Program Number,Program Name,Language,Data Structure,Description,File Size (bytes),Similarity Note
+1,program1.c,C,String,String manipulation,643,
+2,program2.cpp,C++,String,String manipulation,108,Similar to previous program - same data structure
+3,program3.java,Java,String,String manipulation,122,Similar to previous program - same data structure
+4,program4.c,C,Basic Program,Basic program structure,149,
+5,program5.c,C,Basic Input/Output,Basic input output operations,317,
+6,program6.c,C,Basic Input/Output,Basic input output operations,471,Similar to previous program - same data structure
+7,program7.c,C,Basic Input/Output,Basic input output operations,471,Similar to previous program - same data structure
+8,program8.c,C,Arithmetic,Arithmetic display operations,896,
+9,program9.c,C,Arithmetic,Arithmetic display operations,1095,Similar to previous program - same data structure
+10,program10.c,C,File Handling,File Handling display operations,2562,
+11,program11.c,C,File Handling,File Handling display operations,2904,Similar to previous program - same data structure
+12,program12.c,C,Conditional,Conditional statements,821,
+13,program13.c,C,Arithmetic,Arithmetic operations,542,
+14,program14.c,C,Conditional,Conditional statements,729,
+15,program15.c,C,Conditional,Conditional statements,546,Similar to previous program - same data structure
+16,program16.c,C,File Handling,File operations,1618,
+17,program17.c,C,Basic Input/Output,Basic input output operations,510,
+18,program18.java,Java,String,String manipulation,309,
+19,program19.java,Java,String,String display operations,1622,Similar to previous program - same data structure
+20,program20.java,Java,String,String display operations,1499,Similar to previous program - same data structure
+21,program21.java,Java,String,String display operations,2497,Similar to previous program - same data structure
+22,program22.c,C,Arithmetic,Arithmetic display operations,361,
+23,program23.c,C,Basic Program,Basic Program display operations,214,
+24,program24.java,Java,String,String display operations,389,
+25,program25.c,C,Basic Program,Basic Program display operations,223,
+26,program26.c,C,Basic Input/Output,Basic Input/Output display operations,479,
+27,program27.c,C,Basic Input/Output,Basic Input/Output display operations,455,Similar to previous program - same data structure
+28,program28.c,C,Basic Program,Basic Program display operations,240,
+29,program29.c,C,Basic Program,Basic Program display operations,243,Similar to previous program - same data structure
+30,program30.c,C,Arithmetic,Arithmetic display operations,1207,
+31,program31.c,C,Basic Program,Basic Program display operations,282,
+32,program32.c,C,Basic Program,Basic Program display operations,283,Similar to previous program - same data structure
+33,program33.c,C,Arithmetic,Arithmetic display operations,353,
+34,program34.c,C,Basic Program,Basic Program display operations,246,
+35,program35.c,C,Basic Program,Basic Program display operations,249,Similar to previous program - same data structure
+36,program36.c,C,Basic Program,Basic Program display operations,253,Similar to previous program - same data structure
+37,program37.c,C,Basic Input/Output,Basic Input/Output display operations,369,
+38,program38.c,C,Basic Input/Output,Basic Input/Output display operations,353,Similar to previous program - same data structure
+39,program39.c,C,Basic Input/Output,Basic Input/Output display operations,360,Similar to previous program - same data structure
+40,program40.c,C,Basic Input/Output,Basic Input/Output display operations,372,Similar to previous program - same data structure
+41,program41.c,C,Basic Input/Output,Basic Input/Output display operations,399,Similar to previous program - same data structure
+42,program42.c,C,Basic Input/Output,Basic Input/Output display operations,451,Similar to previous program - same data structure
+43,program43.c,C,Conditional,Conditional statements,591,
+44,program44.c,C,Conditional,Conditional statements,637,Similar to previous program - same data structure
+45,program45.c,C,Basic Input/Output,Basic Input/Output display operations,531,
+46,program46.c,C,Conditional,Conditional display operations,569,
+47,program47.c,C,Basic Input/Output,Basic Input/Output display operations,389,
+48,program48.c,C,Basic Input/Output,Basic Input/Output display operations,473,Similar to previous program - same data structure
+49,program49.c,C,Basic Input/Output,Basic Input/Output display operations,479,Similar to previous program - same data structure
+50,program50.c,C,Basic Input/Output,Basic Input/Output display operations,482,Similar to previous program - same data structure
+51,program51.c,C,Basic Input/Output,Basic Input/Output counting operations,531,Similar to previous program - same data structure
+52,program52.c,C,Arithmetic,Arithmetic counting operations,534,
+53,program53.c,C,Arithmetic,Arithmetic counting operations,716,Similar to previous program - same data structure
+54,program54.c,C,Arithmetic,Arithmetic operations,824,Similar to previous program - same data structure
+55,program55.c,C,Arithmetic,Arithmetic operations,971,Similar to previous program - same data structure
+56,program56.c,C,Arithmetic,Arithmetic operations,1213,Similar to previous program - same data structure
+57,program57.c,C,Arithmetic,Arithmetic operations,836,Similar to previous program - same data structure
+58,program58.c,C,Arithmetic,Arithmetic operations,862,Similar to previous program - same data structure
+59,program59.c,C,Arithmetic,Arithmetic operations,855,Similar to previous program - same data structure
+60,program60.c,C,Basic,Basic program,396,
+61,program61.c,C,Basic,Basic program,580,Similar to previous program - same data structure
+62,program62.c,C,Basic,Basic program,1050,Similar to previous program - same data structure
+63,program63.c,C,Basic,Basic program,1052,Similar to previous program - same data structure
+64,program64.c,C,String,String manipulation,1480,
+65,program65.c,C,Looping,Looping constructs,557,
+66,program66.c,C,Looping,Looping constructs,615,Similar to previous program - same data structure
+67,program67.c,C,Looping,Looping display operations,692,Similar to previous program - same data structure
+68,program68.c,C,Basic Input/Output,Basic Input/Output counting operations,472,
+69,program69.c,C,Basic Input/Output,Basic Input/Output counting operations,430,Similar to previous program - same data structure
+70,program70.c,C,Basic Input/Output,Basic input output operations,451,Similar to previous program - same data structure
+71,program71.c,C,Basic Input/Output,Basic input output operations,498,Similar to previous program - same data structure
+72,program72.java,Java,String,String manipulation,288,
+73,program73.java,Java,String,String manipulation,449,Similar to previous program - same data structure
+74,program74.java,Java,String,String manipulation,527,Similar to previous program - same data structure
+75,program75.java,Java,String,String manipulation,589,Similar to previous program - same data structure
+76,program76.java,Java,String,String manipulation,555,Similar to previous program - same data structure
+77,program77.java,Java,String,String display operations,633,Similar to previous program - same data structure
+78,program78.java,Java,String,String display operations,729,Similar to previous program - same data structure
+79,program79.java,Java,String,String manipulation,982,Similar to previous program - same data structure
+80,program80.java,Java,String,String manipulation,1124,Similar to previous program - same data structure
+81,program81.java,Java,String,String manipulation,1202,Similar to previous program - same data structure
+82,program82.java,Java,String,String manipulation,1109,Similar to previous program - same data structure
+83,program83.java,Java,String,String manipulation,1205,Similar to previous program - same data structure
+84,program84.java,Java,String,String manipulation,1157,Similar to previous program - same data structure
+85,program85.java,Java,String,String reversal operations,1204,Similar to previous program - same data structure
+86,program86.java,Java,String,String manipulation,821,Similar to previous program - same data structure
+87,program87.java,Java,String,String manipulation,891,Similar to previous program - same data structure
+88,program88.java,Java,String,String manipulation,937,Similar to previous program - same data structure
+89,program89.java,Java,String,String manipulation,983,Similar to previous program - same data structure
+90,program90.java,Java,String,String display operations,695,Similar to previous program - same data structure
+91,program91.java,Java,String,String manipulation,826,Similar to previous program - same data structure
+92,program92.java,Java,Array,Array operations,347,
+93,program93.java,Java,Array,Array operations,378,Similar to previous program - same data structure
+94,program94.java,Java,Array,Array display operations,403,Similar to previous program - same data structure
+95,program95.java,Java,Array,Array operations,343,Similar to previous program - same data structure
+96,program96.java,Java,Array,Array operations,366,Similar to previous program - same data structure
+97,program97.java,Java,Array,Array display operations,480,Similar to previous program - same data structure
+98,program98.java,Java,Array,Array display operations,829,Similar to previous program - same data structure
+99,program99.java,Java,Array,Array display operations,943,Similar to previous program - same data structure
+100,program100.java,Java,Array,Array display operations,892,Similar to previous program - same data structure
+101,program101.java,Java,Array,Array display operations,1313,Similar to previous program - same data structure
+102,program102.java,Java,Array,Array display operations,1631,Similar to previous program - same data structure
+103,program103.java,Java,Array,Array operations,378,Similar to previous program - same data structure
+104,program104.java,Java,Array,Array display operations,931,Similar to previous program - same data structure
+105,program105.java,Java,Array,Array display operations,1121,Similar to previous program - same data structure
+106,program106.java,Java,Array,Array display operations,1217,Similar to previous program - same data structure
+107,program107.java,Java,Array,Array display operations,1060,Similar to previous program - same data structure
+108,program108.java,Java,Array,Array display operations,1296,Similar to previous program - same data structure
+109,program109.c,C,Array,Array operations,206,Similar to previous program - same data structure
+110,program110.c,C,Array,Array operations,204,Similar to previous program - same data structure
+111,program111.c,C,Array,Array operations,196,Similar to previous program - same data structure
+112,program112.c,C,Array,Array display operations,289,Similar to previous program - same data structure
+113,program113.c,C,Array,Array display operations,296,Similar to previous program - same data structure
+114,program114.c,C,Array,Array display operations,304,Similar to previous program - same data structure
+115,program115.c,C,Array,Array display operations,309,Similar to previous program - same data structure
+116,program116.c,C,Arithmetic,Arithmetic display operations,341,
+117,program117.c,C,Arithmetic,Arithmetic display operations,337,Similar to previous program - same data structure
+118,program118.c,C,Array,Array display operations,338,
+119,program119.c,C,Array,Array display operations,277,Similar to previous program - same data structure
+120,program120.c,C,Array,Array display operations,357,Similar to previous program - same data structure
+121,program121.c,C,Array,Array display operations,348,Similar to previous program - same data structure
+122,program122.c,C,Array,Array display operations,414,Similar to previous program - same data structure
+123,program123.c,C,Array,Array display operations,661,Similar to previous program - same data structure
+124,program124.c,C,Array,Array display operations,735,Similar to previous program - same data structure
+125,program125.c,C,Array,Array display operations,764,Similar to previous program - same data structure
+126,program126.c,C,Array,Array display operations,757,Similar to previous program - same data structure
+127,program127.c,C,Array,Array display operations,785,Similar to previous program - same data structure
+128,program128.c,C,Array,Array operations,777,Similar to previous program - same data structure
+129,program129.c,C,Array,Array counting operations,842,Similar to previous program - same data structure
+130,program130.c,C,Array,Array counting operations,858,Similar to previous program - same data structure
+131,program131.c,C,Array,Array operations,1079,Similar to previous program - same data structure
+132,program132.c,C,Array,Array operations,1136,Similar to previous program - same data structure
+133,program133.c,C,Dynamic Memory,Dynamic memory allocation,783,
+134,program134.c,C,Dynamic Memory,Dynamic memory allocation,855,Similar to previous program - same data structure
+135,program135.c,C,Array,Array counting operations,1072,
+136,program136.c,C,Array,Array counting operations,1204,Similar to previous program - same data structure
+137,program137.c,C,Array,Array counting operations,1479,Similar to previous program - same data structure
+138,program138.c,C,Array,Array counting operations,1501,Similar to previous program - same data structure
+139,program139.c,C,Array,Array searching operations,1469,Similar to previous program - same data structure
+140,program140.c,C,Array,Array searching operations,1420,Similar to previous program - same data structure
+141,program141.c,C,Array,Array searching operations,1392,Similar to previous program - same data structure
+142,program142.c,C,Array,Array searching operations,1386,Similar to previous program - same data structure
+143,program143.c,C,Array,Array searching operations,1436,Similar to previous program - same data structure
+144,program144.c,C,Array,Array operations,1122,Similar to previous program - same data structure
+145,program145.c,C,Array,Array operations,1126,Similar to previous program - same data structure
+146,program146.c,C,Array,Array operations,1114,Similar to previous program - same data structure
+148,program148.c,C,Array,Array operations,1102,Similar to previous program - same data structure
+149,program149.c,C,Basic,Basic program,443,
+150,program150.c,C,Array,Array display operations,980,
+151,program151.java,Java,String,String display operations,426,
+152,program152.java,Java,String,String display operations,855,Similar to previous program - same data structure
+153,program153.java,Java,String,String display operations,640,Similar to previous program - same data structure
+154,program154.java,Java,String,String display operations,900,Similar to previous program - same data structure
+155,program155.java,Java,String,String display operations,832,Similar to previous program - same data structure
+156,program156.java,Java,String,String display operations,678,Similar to previous program - same data structure
+157,program157.java,Java,String,String display operations,784,Similar to previous program - same data structure
+158,program158.java,Java,String,String display operations,795,Similar to previous program - same data structure
+159,program159.java,Java,String,String display operations,802,Similar to previous program - same data structure
+160,program160.java,Java,String,String display operations,1084,Similar to previous program - same data structure
+161,program161.java,Java,String,String display operations,1143,Similar to previous program - same data structure
+162,program162.java,Java,String,String display operations,1079,Similar to previous program - same data structure
+163,program163.java,Java,String,String display operations,869,Similar to previous program - same data structure
+164,program164.java,Java,String,String display operations,958,Similar to previous program - same data structure
+165,program165.java,Java,String,String display operations,907,Similar to previous program - same data structure
+166,program166.java,Java,String,String display operations,930,Similar to previous program - same data structure
+167,program167.java,Java,String,String display operations,930,Similar to previous program - same data structure
+168,program168.java,Java,String,String display operations,1147,Similar to previous program - same data structure
+169,program169.java,Java,String,String display operations,1144,Similar to previous program - same data structure
+170,program170.java,Java,String,String display operations,1143,Similar to previous program - same data structure
+171,program171.java,Java,String,String display operations,865,Similar to previous program - same data structure
+172,program172.java,Java,String,String display operations,811,Similar to previous program - same data structure
+173,program173.java,Java,String,String display operations,797,Similar to previous program - same data structure
+174,program174.java,Java,String,String display operations,797,Similar to previous program - same data structure
+175,program175.java,Java,String,String display operations,799,Similar to previous program - same data structure
+176,program176.java,Java,String,String display operations,741,Similar to previous program - same data structure
+177,program177.java,Java,String,String display operations,888,Similar to previous program - same data structure
+178,program178.java,Java,String,String display operations,734,Similar to previous program - same data structure
+179,program179.java,Java,String,String display operations,997,Similar to previous program - same data structure
+180,program180.java,Java,String,String display operations,1031,Similar to previous program - same data structure
+181,program181.java,Java,String,String display operations,1062,Similar to previous program - same data structure
+182,program182.java,Java,String,String display operations,1230,Similar to previous program - same data structure
+183,program183.java,Java,String,String display operations,1245,Similar to previous program - same data structure
+184,program184.java,Java,String,String display operations,1266,Similar to previous program - same data structure
+185,program185.java,Java,String,String display operations,1265,Similar to previous program - same data structure
+186,program186.java,Java,String,String display operations,1205,Similar to previous program - same data structure
+187,program187.java,Java,String,String display operations,1451,Similar to previous program - same data structure
+188,program188.java,Java,String,String display operations,1492,Similar to previous program - same data structure
+189,program189.java,Java,String,String display operations,1448,Similar to previous program - same data structure
+190,program190.java,Java,String,String display operations,1447,Similar to previous program - same data structure
+191,program191.java,Java,String,String display operations,1654,Similar to previous program - same data structure
+192,program192.java,Java,String,String display operations,1661,Similar to previous program - same data structure
+193,program193.java,Java,String,String display operations,1638,Similar to previous program - same data structure
+194,program194.java,Java,String,String display operations,1408,Similar to previous program - same data structure
+195,program195.java,Java,String,String display operations,1262,Similar to previous program - same data structure
+196,program196.c,C,File Handling,File operations,276,
+197,program197.c,C,File Handling,File operations,290,Similar to previous program - same data structure
+198,program198.c,C,Basic Program,Basic program structure,118,
+199,program199.c,C,File Handling,File operations,407,
+200,program200.c,C,File Handling,File operations,406,Similar to previous program - same data structure
+201,program201.c,C,File Handling,File operations,444,Similar to previous program - same data structure
+202,program202.c,C,File Handling,File operations,372,Similar to previous program - same data structure
+203,program203.c,C,File Handling,File operations,494,Similar to previous program - same data structure
+204,program204.c,C,File Handling,File operations,467,Similar to previous program - same data structure
+205,program205.c,C,File Handling,File operations,516,Similar to previous program - same data structure
+206,program206.c,C,File Handling,File operations,516,Similar to previous program - same data structure
+207,program207.c,C,File Handling,File operations,525,Similar to previous program - same data structure
+208,program208.c,C,File Handling,File operations,570,Similar to previous program - same data structure
+209,program209.c,C,Basic Program,Basic program structure,106,
+210,program210.c,C,Basic Program,Basic program structure,125,Similar to previous program - same data structure
+211,program211.c,C,String,String manipulation,281,
+212,program212.c,C,Basic Input/Output,Basic input output operations,213,
+213,program213.c,C,Basic Input/Output,Basic input output operations,185,Similar to previous program - same data structure
+214,program214.c,C,String,String display operations,309,
+215,program215.c,C,String,String display operations,292,Similar to previous program - same data structure
+216,program216.c,C,String,String display operations,293,Similar to previous program - same data structure
+217,program217.c,C,String,String counting operations,397,Similar to previous program - same data structure
+218,program218.c,C,String,String counting operations,441,Similar to previous program - same data structure
+219,program219.c,C,String,String counting operations,441,Similar to previous program - same data structure
+220,program220.c,C,String,String counting operations,456,Similar to previous program - same data structure
+221,program221.c,C,String,String counting operations,522,Similar to previous program - same data structure
+222,program222.c,C,String,String counting operations,604,Similar to previous program - same data structure
+223,program223.c,C,String,String counting operations,499,Similar to previous program - same data structure
+224,program224.c,C,String,String counting operations,691,Similar to previous program - same data structure
+225,program225.c,C,String,String counting operations,624,Similar to previous program - same data structure
+226,program226.c,C,String,String counting operations,639,Similar to previous program - same data structure
+227,program227.c,C,String,String counting operations,490,Similar to previous program - same data structure
+228,program228.c,C,String,String counting operations,584,Similar to previous program - same data structure
+229,program229.c,C,String,String counting operations,588,Similar to previous program - same data structure
+230,program230.c,C,String,String counting operations,643,Similar to previous program - same data structure
+231,program231.c,C,String,String counting operations,676,Similar to previous program - same data structure
+232,program232.c,C,String,String counting operations,444,Similar to previous program - same data structure
+233,program233.c,C,String,String counting operations,424,Similar to previous program - same data structure
+234,program234.c,C,String,String counting operations,414,Similar to previous program - same data structure
+235,program235.c,C,String,String manipulation,386,Similar to previous program - same data structure
+236,program236.c,C,String,String manipulation,401,Similar to previous program - same data structure
+237,program237.c,C,String,String manipulation,409,Similar to previous program - same data structure
+238,program238.c,C,String,String manipulation,409,Similar to previous program - same data structure
+239,program239.c,C,String,String manipulation,513,Similar to previous program - same data structure
+240,program240.java,Java,String,String manipulation,274,Similar to previous program - same data structure
+241,program241.java,Java,String,String manipulation,341,Similar to previous program - same data structure
+242,program242.java,Java,String,String manipulation,497,Similar to previous program - same data structure
+243,program243.java,Java,String,String manipulation,426,Similar to previous program - same data structure
+244,program244.java,Java,String,String display operations,524,Similar to previous program - same data structure
+245,program245.java,Java,Array,Array operations,377,
+246,program246.java,Java,Array,Array operations,472,Similar to previous program - same data structure
+247,program247.java,Java,Array,Array operations,419,Similar to previous program - same data structure
+248,program248.java,Java,Array,Array display operations,556,Similar to previous program - same data structure
+249,program249.java,Java,Array,Array counting operations,747,Similar to previous program - same data structure
+250,program250.java,Java,Array,Array counting operations,773,Similar to previous program - same data structure
+251,program251.java,Java,Array,Array counting operations,779,Similar to previous program - same data structure
+252,program252.java,Java,Array,Array operations,632,Similar to previous program - same data structure
+253,program253.java,Java,Array,Array operations,617,Similar to previous program - same data structure
+254,program254.java,Java,Array,Array operations,619,Similar to previous program - same data structure
+255,program255.java,Java,Array,Array operations,819,Similar to previous program - same data structure
+256,program256.java,Java,Array,Array operations,953,Similar to previous program - same data structure
+257,program257.c,C,String,String manipulation,380,
+258,program258.c,C,String,String manipulation,536,Similar to previous program - same data structure
+259,program259.c,C,String,String display operations,370,Similar to previous program - same data structure
+260,program260.c,C,String,String manipulation,501,Similar to previous program - same data structure
+261,program261.cpp,C++,String,String manipulation,249,Similar to previous program - same data structure
+262,program262.cpp,C++,String,String manipulation,260,Similar to previous program - same data structure
+263,program263.cpp,C++,String,String manipulation,566,Similar to previous program - same data structure
+264,program264.cpp,C++,String,String manipulation,317,Similar to previous program - same data structure
+265,program265.cpp,C++,String,String manipulation,335,Similar to previous program - same data structure
+266,program266.cpp,C++,String,String manipulation,339,Similar to previous program - same data structure
+267,program267.cpp,C++,String,String manipulation,460,Similar to previous program - same data structure
+268,program268.cpp,C++,Array,Array operations,375,
+269,program269.cpp,C++,String,String manipulation,403,
+270,program270.cpp,C++,String,String manipulation,410,Similar to previous program - same data structure
+271,program271.cpp,C++,String,String manipulation,406,Similar to previous program - same data structure
+272,program272.cpp,C++,String,String manipulation,421,Similar to previous program - same data structure
+273,program273.cpp,C++,String,String manipulation,465,Similar to previous program - same data structure
+274,program274.cpp,C++,String,String counting operations,477,Similar to previous program - same data structure
+275,program275.cpp,C++,String,String display operations,235,Similar to previous program - same data structure
+276,program276.cpp,C++,String,String manipulation,210,Similar to previous program - same data structure
+277,program277.cpp,C++,String,String manipulation,544,Similar to previous program - same data structure
+278,program278.cpp,C++,String,String manipulation,661,Similar to previous program - same data structure
+279,program279.cpp,C++,String,String manipulation,693,Similar to previous program - same data structure
+280,program280.cpp,C++,String,String manipulation,695,Similar to previous program - same data structure
+281,program281.cpp,C++,String,String display operations,221,Similar to previous program - same data structure
+282,program282.cpp,C++,String,String display operations,206,Similar to previous program - same data structure
+283,program283.cpp,C++,String,String display operations,229,Similar to previous program - same data structure
+284,program284.cpp,C++,String,String display operations,149,Similar to previous program - same data structure
+285,program285.cpp,C++,String,String display operations,217,Similar to previous program - same data structure
+286,program286.cpp,C++,String,String display operations,222,Similar to previous program - same data structure
+287,program287.cpp,C++,String,String display operations,226,Similar to previous program - same data structure
+288,program288.cpp,C++,String,String manipulation,220,Similar to previous program - same data structure
+289,program289.cpp,C++,String,String manipulation,389,Similar to previous program - same data structure
+290,program290.cpp,C++,String,String display operations,233,Similar to previous program - same data structure
+291,program291.cpp,C++,String,String display operations,329,Similar to previous program - same data structure
+292,program292.java,Java,Array,Array operations,246,
+293,program293.java,Java,Array,Array sorting operations,420,Similar to previous program - same data structure
+294,program294.java,Java,Array,Array searching operations,355,Similar to previous program - same data structure
+295,program295.java,Java,String,String manipulation,510,
+296,program296.java,Java,String,String manipulation,616,Similar to previous program - same data structure
+297,program297.java,Java,String,String manipulation,777,Similar to previous program - same data structure
+298,program298.java,Java,Array,Array operations,737,
+299,program299.java,Java,String,String manipulation,600,
+300,program300.java,Java,Hash Table,Hash table implementation,371,
+301,program301.java,Java,Hash Table,Hash table implementation,578,Similar to previous program - same data structure
+302,program302.java,Java,Hash Table,Hash table implementation,641,Similar to previous program - same data structure
+303,program303.c,C,Singly Linked List,Singly linked list implementation,158,
+304,program304.c,C,Singly Linked List,Singly linked list implementation,174,Similar to previous program - same data structure
+305,program305.c,C,Singly Linked List,Singly linked list implementation,221,Similar to previous program - same data structure
+306,program306.c,C,Singly Linked List,Singly linked list implementation,232,Similar to previous program - same data structure
+307,program307.c,C,Singly Linked List,Singly linked list implementation,257,Similar to previous program - same data structure
+308,program308.c,C,Singly Linked List,Singly linked list implementation,307,Similar to previous program - same data structure
+309,program309.c,C,Singly Linked List,Singly linked list implementation,332,Similar to previous program - same data structure
+310,program310.c,C,Singly Linked List,Singly linked list implementation,275,Similar to previous program - same data structure
+311,program311.c,C,Singly Linked List,Singly Linked List display operations,380,Similar to previous program - same data structure
+312,program312.c,C,Singly Linked List,Linked list insertion operations,623,Similar to previous program - same data structure
+313,program313.c,C,Singly Linked List,Linked list insertion operations,814,Similar to previous program - same data structure
+314,program314.c,C,Singly Linked List,Linked list insertion operations,937,Similar to previous program - same data structure
+315,program315.c,C,Singly Linked List,Linked list insertion operations,1050,Similar to previous program - same data structure
+316,program316.c,C,Singly Linked List,Linked list insertion operations,977,Similar to previous program - same data structure
+317,program317.c,C,Singly Linked List,Linked list insertion operations,1177,Similar to previous program - same data structure
+318,program318.c,C,Singly Linked List,Linked list insertion operations,1222,Similar to previous program - same data structure
+319,program319.c,C,Singly Linked List,Linked list insertion operations,1440,Similar to previous program - same data structure
+320,program320.c,C,Singly Linked List,Linked list insertion operations,1869,Similar to previous program - same data structure
+321,program321.c,C,Singly Linked List,Linked list insertion operations,2511,Similar to previous program - same data structure
+322,program322.c,C,Singly Linked List,Linked list insertion operations,2828,Similar to previous program - same data structure
+323,program323.js,JavaScript,Basic,Basic program,34,
+324,program324.js,JavaScript,Basic,Basic program,72,Similar to previous program - same data structure
+325,program325.js,JavaScript,Basic,Basic program,102,Similar to previous program - same data structure
+326,program326.js,JavaScript,Basic,Basic program,55,Similar to previous program - same data structure
+327,program327.js,JavaScript,Basic,Basic program,120,Similar to previous program - same data structure
+328,program328.js,JavaScript,String,String manipulation,133,
+329,program329.js,JavaScript,Basic,Basic program,65,
+330,program330.js,JavaScript,Arithmetic,Arithmetic operations,94,
+331,program331.js,JavaScript,Basic,Basic display operations,70,
+332,program332.js,JavaScript,Arithmetic,Arithmetic display operations,77,
+333,program333.js,JavaScript,Arithmetic,Arithmetic display operations,100,Similar to previous program - same data structure
+334,program334.js,JavaScript,Basic Program,Basic Program display operations,109,
+335,program335.js,JavaScript,Basic Program,Basic Program display operations,197,Similar to previous program - same data structure
+336,program336.js,JavaScript,Basic Program,Basic program structure,269,Similar to previous program - same data structure
+337,program337.js,JavaScript,Basic Program,Basic program structure,180,Similar to previous program - same data structure
+338,program338.js,JavaScript,Basic Program,Basic program structure,141,Similar to previous program - same data structure
+339,program339.js,JavaScript,Basic Program,Basic program structure,155,Similar to previous program - same data structure
+340,program340.js,JavaScript,Basic Program,Basic program structure,163,Similar to previous program - same data structure
+341,program341.js,JavaScript,Basic Program,Basic program structure,250,Similar to previous program - same data structure
+342,program342.js,JavaScript,Basic Program,Basic program structure,281,Similar to previous program - same data structure
+343,program343.js,JavaScript,Basic Program,Basic program structure,294,Similar to previous program - same data structure
+344,program344.js,JavaScript,Basic Program,Basic Program display operations,270,Similar to previous program - same data structure
+345,program345.js,JavaScript,Basic Program,Basic program structure,294,Similar to previous program - same data structure
+346,program346.js,JavaScript,Looping,Looping constructs,310,
+347,program347.js,JavaScript,Arithmetic,Arithmetic operations,573,
+348,program348.js,JavaScript,Arithmetic,Arithmetic counting operations,357,Similar to previous program - same data structure
+349,program349.js,JavaScript,Basic Program,Basic program structure,223,
+350,program350.js,JavaScript,Basic Program,Basic program structure,235,Similar to previous program - same data structure
+351,program351.js,JavaScript,Arithmetic,Arithmetic counting operations,354,
+352,program352.js,JavaScript,Arithmetic,Arithmetic counting operations,308,Similar to previous program - same data structure
+353,program353.js,JavaScript,Arithmetic,Arithmetic operations,357,Similar to previous program - same data structure
+354,program354.js,JavaScript,Basic Program,Basic program structure,155,
+355,program355.js,JavaScript,Basic Program,Basic program structure,199,Similar to previous program - same data structure
+356,program356.js,JavaScript,Basic Program,Basic program structure,200,Similar to previous program - same data structure
+357,program357.cpp,C++,String,String manipulation,203,
+358,program358.cpp,C++,String,String manipulation,232,Similar to previous program - same data structure
+359,program359.js,JavaScript,Basic Program,Basic program structure,146,
+360,program360.js,JavaScript,Basic Program,Basic program structure,144,Similar to previous program - same data structure
+361,program361.js,JavaScript,Basic Program,Basic program structure,206,Similar to previous program - same data structure
+362,program362.js,JavaScript,Basic Program,Basic program structure,208,Similar to previous program - same data structure
+363,program363.js,JavaScript,Basic Program,Basic program structure,139,Similar to previous program - same data structure
+364,program364.js,JavaScript,Basic Program,Basic program structure,138,Similar to previous program - same data structure
+365,program365.js,JavaScript,Basic Program,Basic program structure,231,Similar to previous program - same data structure
+366,program366.js,JavaScript,Basic Program,Basic program structure,171,Similar to previous program - same data structure
+367,program367.js,JavaScript,Basic Program,Basic Program display operations,216,Similar to previous program - same data structure
+368,program368.js,JavaScript,Arithmetic,Arithmetic operations,377,
+369,program369.js,JavaScript,Arithmetic,Arithmetic operations,377,Similar to previous program - same data structure
+370,program370.js,JavaScript,String,String manipulation,143,
+371,program371.js,JavaScript,String,String manipulation,258,Similar to previous program - same data structure
+372,program372.js,JavaScript,String,String manipulation,272,Similar to previous program - same data structure
+373,program373.js,JavaScript,String,String manipulation,258,Similar to previous program - same data structure
+374,program374.js,JavaScript,String,String manipulation,381,Similar to previous program - same data structure
+375,program375.cpp,C++,String,String manipulation,477,Similar to previous program - same data structure
+376,program376.js,JavaScript,String,String manipulation,468,Similar to previous program - same data structure
+377,program377.js,JavaScript,String,String manipulation,141,Similar to previous program - same data structure
+378,program378.js,JavaScript,String,String manipulation,110,Similar to previous program - same data structure
+379,program379.js,JavaScript,String,String manipulation,212,Similar to previous program - same data structure
+380,program380.js,JavaScript,String,String manipulation,166,Similar to previous program - same data structure
+381,program381.js,JavaScript,String,String counting operations,250,Similar to previous program - same data structure
+382,program382.js,JavaScript,String,String counting operations,336,Similar to previous program - same data structure
+383,program383.js,JavaScript,String,String counting operations,377,Similar to previous program - same data structure
+384,program384.js,JavaScript,String,String manipulation,166,Similar to previous program - same data structure
+385,program385.js,JavaScript,String,String manipulation,369,Similar to previous program - same data structure
+386,program386.js,JavaScript,Basic Program,Basic program structure,147,
+387,program387.js,JavaScript,Basic Program,Basic program structure,147,Similar to previous program - same data structure
+388,program388.js,JavaScript,Singly Linked List,Linked list insertion operations,295,
+389,program389.js,JavaScript,Basic,Basic program,30,
+390,program390.c,C,Singly Linked List,Linked list insertion operations,2682,
+391,program391.c,C,Singly Linked List,Linked list insertion operations,3448,Similar to previous program - same data structure
+392,program392.c,C,Singly Linked List,Linked list insertion operations,3836,Similar to previous program - same data structure
+393,program393.c,C,Singly Linked List,Linked list insertion operations,4245,Similar to previous program - same data structure
+394,program394.c,C,Doubly Linked List,Linked list insertion operations,588,
+395,program395.c,C,Doubly Linked List,Linked list insertion operations,1124,Similar to previous program - same data structure
+396,program396.c,C,Doubly Linked List,Linked list insertion operations,1395,Similar to previous program - same data structure
+397,program397.c,C,Doubly Linked List,Linked list insertion operations,1602,Similar to previous program - same data structure
+398,program398.c,C,Doubly Linked List,Linked list insertion operations,2026,Similar to previous program - same data structure
+399,program399.c,C,Doubly Linked List,Linked list insertion operations,2640,Similar to previous program - same data structure
+400,program400.c,C,Doubly Linked List,Linked list insertion operations,2972,Similar to previous program - same data structure
+401,program401.c,C,Doubly Linked List,Linked list insertion operations,4044,Similar to previous program - same data structure
+402,program402.c,C,Doubly Linked List,Linked list insertion operations,4344,Similar to previous program - same data structure
+403,program403.c,C,Doubly Linked List,Linked list insertion operations,4646,Similar to previous program - same data structure
+404,program404.c,C,Singly Linked List,Linked list insertion operations,690,
+405,program405.c,C,Singly Linked List,Linked list insertion operations,1382,Similar to previous program - same data structure
+406,program406.c,C,Singly Linked List,Linked list insertion operations,1555,Similar to previous program - same data structure
+407,program407.c,C,Singly Linked List,Linked list insertion operations,1723,Similar to previous program - same data structure
+408,program408.c,C,Singly Linked List,Linked list insertion operations,1941,Similar to previous program - same data structure
+409,program409.c,C,Singly Linked List,Linked list insertion operations,2788,Similar to previous program - same data structure
+410,program410.c,C,Singly Linked List,Linked list insertion operations,3132,Similar to previous program - same data structure
+411,program411.c,C,Singly Linked List,Linked list insertion operations,4263,Similar to previous program - same data structure
+412,program412.c,C,Singly Linked List,Linked list insertion operations,4652,Similar to previous program - same data structure
+413,program413.c,C,Doubly Linked List,Linked list insertion operations,702,
+414,program414.c,C,Doubly Linked List,Linked list insertion operations,2020,Similar to previous program - same data structure
+415,program415.c,C,Doubly Linked List,Linked list insertion operations,2070,Similar to previous program - same data structure
+416,program416.c,C,Doubly Linked List,Linked list insertion operations,2257,Similar to previous program - same data structure
+417,program417.c,C,Doubly Linked List,Linked list insertion operations,2538,Similar to previous program - same data structure
+418,program418.c,C,Doubly Linked List,Linked list insertion operations,3451,Similar to previous program - same data structure
+419,program419.c,C,Doubly Linked List,Linked list insertion operations,5031,Similar to previous program - same data structure
+420,program420.cpp,C++,Singly Linked List,Singly Linked List counting operations,468,
+421,program421.cpp,C++,Singly Linked List,Linked list insertion operations,1004,Similar to previous program - same data structure
+422,program422.cpp,C++,Singly Linked List,Linked list insertion operations,1885,Similar to previous program - same data structure
+423,program423.cpp,C++,Singly Linked List,Linked list insertion operations,2276,Similar to previous program - same data structure
+424,program424.cpp,C++,Singly Linked List,Linked list insertion operations,2150,Similar to previous program - same data structure
+425,program425.cpp,C++,Singly Linked List,Linked list insertion operations,2209,Similar to previous program - same data structure
+426,program426.cpp,C++,Singly Linked List,Linked list insertion operations,2232,Similar to previous program - same data structure
+427,program427.cpp,C++,Singly Linked List,Linked list insertion operations,3482,Similar to previous program - same data structure
+428,program428.cpp,C++,Singly Linked List,Linked list insertion operations,5353,Similar to previous program - same data structure
+429,program429.cpp,C++,Singly Linked List,Linked list insertion operations,5581,Similar to previous program - same data structure
+430,program430.cpp,C++,Singly Linked List,Linked list insertion operations,5644,Similar to previous program - same data structure
+431,program431.cpp,C++,Singly Linked List,Linked list insertion operations,5689,Similar to previous program - same data structure
+432,program432.cpp,C++,Singly Linked List,Linked list insertion operations,5596,Similar to previous program - same data structure
+433,program433.cpp,C++,Singly Linked List,Linked list insertion operations,5596,Similar to previous program - same data structure
+434,program434.cpp,C++,String,String manipulation,502,
+435,program435.cpp,C++,String,String manipulation,552,Similar to previous program - same data structure
+436,program436.cpp,C++,String,String manipulation,586,Similar to previous program - same data structure
+437,program437.java,Java,Singly Linked List,Singly Linked List counting operations,259,
+438,program438.java,Java,Singly Linked List,Singly Linked List counting operations,402,Similar to previous program - same data structure
+439,program439.java,Java,Singly Linked List,Linked list insertion operations,1018,Similar to previous program - same data structure
+440,program440.java,Java,Singly Linked List,Linked list insertion operations,1106,Similar to previous program - same data structure
+441,program441.java,Java,Singly Linked List,Linked list insertion operations,1530,Similar to previous program - same data structure
+442,program442.java,Java,Singly Linked List,Linked list insertion operations,1608,Similar to previous program - same data structure
+443,program443.java,Java,Singly Linked List,Linked list insertion operations,2206,Similar to previous program - same data structure
+444,program444.java,Java,Singly Linked List,Linked list insertion operations,2494,Similar to previous program - same data structure
+445,program445.java,Java,Singly Linked List,Linked list insertion operations,3222,Similar to previous program - same data structure
+446,program446.java,Java,Singly Linked List,Linked list insertion operations,5286,Similar to previous program - same data structure
+447,program447.java,Java,Singly Linked List,Linked list insertion operations,2082,Similar to previous program - same data structure
+448,program448.java,Java,Singly Linked List,Linked list insertion operations,5315,Similar to previous program - same data structure
+449,program449.java,Java,Doubly Linked List,Linked list insertion operations,2130,
+450,program450.java,Java,Doubly Linked List,Linked list insertion operations,2079,Similar to previous program - same data structure
+451,program451.cpp,C++,Singly Linked List,Linked list insertion operations,1735,
+452,program452.cpp,C++,Doubly Linked List,Linked list insertion operations,1758,
+453,program453.cpp,C++,Doubly Linked List,Linked list insertion operations,1705,Similar to previous program - same data structure
+454,program454.cpp,C++,Singly Linked List,Linked list insertion operations,4522,
+455,program455.cpp,C++,Singly Linked List,Linked list insertion operations,4791,Similar to previous program - same data structure
+456,program456.cpp,C++,String,Linked list insertion operations,4926,
+457,program457.cpp,C++,String,String manipulation,370,Similar to previous program - same data structure
+458,program458.cpp,C++,String,String manipulation,394,Similar to previous program - same data structure
+459,program459.cpp,C++,String,String manipulation,395,Similar to previous program - same data structure
+460,program460.cpp,C++,String,String manipulation,383,Similar to previous program - same data structure
+461,program461.cpp,C++,String,String manipulation,394,Similar to previous program - same data structure
+462,program462.cpp,C++,String,String manipulation,430,Similar to previous program - same data structure
+463,program463.cpp,C++,String,String manipulation,613,Similar to previous program - same data structure
+464,program464.cpp,C++,String,String manipulation,471,Similar to previous program - same data structure
+465,program465.cpp,C++,String,String manipulation,668,Similar to previous program - same data structure
+466,program466.cpp,C++,String,String manipulation,673,Similar to previous program - same data structure
+467,program467.cpp,C++,String,String manipulation,836,Similar to previous program - same data structure
+468,program468.cpp,C++,String,String manipulation,845,Similar to previous program - same data structure
+469,program469.cpp,C++,String,String manipulation,1027,Similar to previous program - same data structure
+470,program470.cpp,C++,Array,Array operations,413,
+471,program471.cpp,C++,Array,Array operations,456,Similar to previous program - same data structure
+472,program472.cpp,C++,Array,Array operations,565,Similar to previous program - same data structure
+473,program473.cpp,C++,Array,Array display operations,1173,Similar to previous program - same data structure
+474,program474.cpp,C++,Array,Array display operations,1483,Similar to previous program - same data structure
+475,program475.cpp,C++,Array,Array display operations,1328,Similar to previous program - same data structure
+476,program476.cpp,C++,Array,Array display operations,1632,Similar to previous program - same data structure
+477,program477.cpp,C++,Array,Array display operations,1936,Similar to previous program - same data structure
+478,program478.cpp,C++,Array,Array display operations,2099,Similar to previous program - same data structure
+479,program479.cpp,C++,Doubly Linked List,Linked list insertion operations,1049,
+480,program480.cpp,C++,Doubly Linked List,Linked list insertion operations,2322,Similar to previous program - same data structure
+481,program481.cpp,C++,Doubly Linked List,Linked list insertion operations,3501,Similar to previous program - same data structure
+482,program482.cpp,C++,Doubly Linked List,Linked list insertion operations,4917,Similar to previous program - same data structure
+483,program483.cpp,C++,Doubly Linked List,Linked list insertion operations,5172,Similar to previous program - same data structure
+484,program484.cpp,C++,Doubly Linked List,Linked list insertion operations,5177,Similar to previous program - same data structure
+485,program485.cpp,C++,Singly Linked List,Linked list insertion operations,4805,
+486,program486.cpp,C++,String,Linked list insertion operations,5169,
+487,program487.cpp,C++,String,Linked list insertion operations,5545,Similar to previous program - same data structure
+488,program488.cpp,C++,String,Linked list insertion operations,9679,Similar to previous program - same data structure
+489,program489.cpp,C++,String,Linked list insertion operations,10120,Similar to previous program - same data structure
+490,program490.cpp,C++,String,Linked list insertion operations,11992,Similar to previous program - same data structure
+491,program491.cpp,C++,Stack,Linked list insertion operations,796,
+492,program492.cpp,C++,Stack,Linked list insertion operations,2416,Similar to previous program - same data structure
+493,program493.cpp,C++,Stack,Stack display operations,2548,Similar to previous program - same data structure
+494,program494.cpp,C++,Stack,Stack display operations,2744,Similar to previous program - same data structure
+495,program495.cpp,C++,Stack,Linked list insertion operations,14899,Similar to previous program - same data structure
+496,program496.cpp,C++,Queue,Linked list insertion operations,2325,
+497,program497.cpp,C++,Queue,Linked list insertion operations,2409,Similar to previous program - same data structure
+498,program498.cpp,C++,Queue,Queue display operations,2700,Similar to previous program - same data structure
+499,program499.cpp,C++,Queue,Queue display operations,2736,Similar to previous program - same data structure
+500,program500.cpp,C++,Stack,Linked list insertion operations,17637,
+501,program501.cpp,C++,Queue,Queue display operations,3747,
+502,program502.c,C,Basic Program,Basic program structure,214,
+503,program503.c,C,File Handling,File operations,313,
+504,program504.c,C,File Handling,File operations,393,Similar to previous program - same data structure
+505,program505.c,C,File Handling,File operations,365,Similar to previous program - same data structure
+506,program506.c,C,File Handling,File operations,366,Similar to previous program - same data structure
+507,program507.c,C,File Handling,File operations,379,Similar to previous program - same data structure
+508,program508.c,C,File Handling,File operations,385,Similar to previous program - same data structure
+509,program509.c,C,File Handling,File operations,503,Similar to previous program - same data structure
+510,program510.c,C,File Handling,File operations,526,Similar to previous program - same data structure
+511,program511.c,C,File Handling,File operations,504,Similar to previous program - same data structure
+512,program512.c,C,File Handling,File operations,523,Similar to previous program - same data structure
+513,program513.c,C,File Handling,File operations,402,Similar to previous program - same data structure
+514,program514.c,C,File Handling,File operations,619,Similar to previous program - same data structure
+515,program515.c,C,File Handling,File operations,562,Similar to previous program - same data structure
+516,program516.c,C,File Handling,File operations,619,Similar to previous program - same data structure
+517,program517.c,C,File Handling,File operations,603,Similar to previous program - same data structure
+518,program518.c,C,File Handling,File operations,656,Similar to previous program - same data structure
+519,program519.c,C,File Handling,File operations,415,Similar to previous program - same data structure
+520,program520.c,C,File Handling,File operations,619,Similar to previous program - same data structure
+521,program521.c,C,File Handling,File operations,710,Similar to previous program - same data structure
+522,program522.c,C,File Handling,File operations,695,Similar to previous program - same data structure
+523,program523.c,C,File Handling,File operations,725,Similar to previous program - same data structure
+524,program524.c,C,File Handling,File Handling counting operations,862,Similar to previous program - same data structure
+525,program525.c,C,File Handling,File operations,626,Similar to previous program - same data structure
+526,program526.c,C,File Handling,File operations,878,Similar to previous program - same data structure
+527,program527.c,C,File Handling,File operations,878,Similar to previous program - same data structure
+615,program615.java,Java,String,String manipulation,232,
+616,program616.java,Java,String,String manipulation,194,Similar to previous program - same data structure
+617,program617.java,Java,Tree,Tree data structure,244,
+618,program618.java,Java,String,String manipulation,148,
+619,program619.java,Java,String,String manipulation,387,Similar to previous program - same data structure
+620,program620.java,Java,String,String counting operations,515,Similar to previous program - same data structure
+621,program621.java,Java,String,String counting operations,471,Similar to previous program - same data structure
+622,program622.java,Java,Tree,Tree counting operations,1249,
+623,program623.java,Java,Tree,Tree counting operations,1426,Similar to previous program - same data structure
+624,program624.java,Java,String,String manipulation,491,
+625,program625.java,Java,String,String manipulation,512,Similar to previous program - same data structure
+626,program626.java,Java,String,String manipulation,508,Similar to previous program - same data structure
+627,program627.java,Java,String,String manipulation,514,Similar to previous program - same data structure
+628,program628.java,Java,String,String manipulation,521,Similar to previous program - same data structure
+629,program629.java,Java,String,String manipulation,523,Similar to previous program - same data structure
+630,program630.java,Java,String,String manipulation,523,Similar to previous program - same data structure
+631,program631.java,Java,String,String manipulation,213,Similar to previous program - same data structure
+632,program632.java,Java,String,String manipulation,213,Similar to previous program - same data structure
+633,program633.java,Java,String,String manipulation,631,Similar to previous program - same data structure
+634,program634.java,Java,String,String manipulation,107,Similar to previous program - same data structure
+635,program635.java,Java,String,String manipulation,525,Similar to previous program - same data structure
+636,program636.java,Java,String,String manipulation,526,Similar to previous program - same data structure
+637,program637.java,Java,String,String manipulation,777,Similar to previous program - same data structure
+638,program638.java,Java,String,String manipulation,798,Similar to previous program - same data structure
+639,program639.java,Java,String,String manipulation,773,Similar to previous program - same data structure
+640,program640.java,Java,String,String manipulation,843,Similar to previous program - same data structure
+641,program641.cpp,C++,String,String display operations,173,Similar to previous program - same data structure
+642,program642.cpp,C++,String,String display operations,182,Similar to previous program - same data structure
+643,program643.cpp,C++,String,String display operations,197,Similar to previous program - same data structure
+644,program644.cpp,C++,String,String display operations,138,Similar to previous program - same data structure
+645,program645.cpp,C++,String,String display operations,163,Similar to previous program - same data structure
+646,program646.cpp,C++,String,String display operations,164,Similar to previous program - same data structure
+647,program647.cpp,C++,String,String display operations,170,Similar to previous program - same data structure
+648,program648.cpp,C++,String,String display operations,191,Similar to previous program - same data structure
+649,program649.cpp,C++,String,String display operations,217,Similar to previous program - same data structure
+650,program650.cpp,C++,String,String display operations,216,Similar to previous program - same data structure
+651,program651.cpp,C++,String,String display operations,201,Similar to previous program - same data structure
+652,program652.cpp,C++,String,String display operations,227,Similar to previous program - same data structure
+653,program653.cpp,C++,String,String display operations,227,Similar to previous program - same data structure
+654,program654.cpp,C++,String,String display operations,247,Similar to previous program - same data structure
+655,program655.cpp,C++,String,String display operations,223,Similar to previous program - same data structure
+656,program656.cpp,C++,String,String display operations,242,Similar to previous program - same data structure
+657,program657.cpp,C++,String,String manipulation,340,Similar to previous program - same data structure
+658,program658.cpp,C++,String,String manipulation,363,Similar to previous program - same data structure
+659,program659.cpp,C++,String,String manipulation,318,Similar to previous program - same data structure
+660,program660.cpp,C++,String,String manipulation,345,Similar to previous program - same data structure
+661,program661.cpp,C++,String,String manipulation,324,Similar to previous program - same data structure
+662,program662.cpp,C++,String,String manipulation,352,Similar to previous program - same data structure
+663,program663.cpp,C++,String,String manipulation,359,Similar to previous program - same data structure
+664,program664.cpp,C++,String,String manipulation,358,Similar to previous program - same data structure
+665,program665.cpp,C++,String,String manipulation,304,Similar to previous program - same data structure
+666,program666.c,C,Conditional,Conditional statements,348,
+667,program667.c,C,String,String manipulation,1370,
+668,program668.c,C,String,String manipulation,1620,Similar to previous program - same data structure
+669,program669.c,C,String,String manipulation,1914,Similar to previous program - same data structure
+670,program670.c,C,String,String manipulation,696,Similar to previous program - same data structure
+671,program671.c,C,Tree,Tree data structure,1310,
+672,program672.c,C,String,String manipulation,2202,
+673,program673.c,C,Tree,Tree data structure,1720,
