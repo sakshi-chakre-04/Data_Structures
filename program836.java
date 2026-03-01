@@ -1,12 +1,12 @@
 import java.util.*;
 
-class program835
+class program836
 {
     public static void main(String[] args) 
     {
         Scanner sobj = new Scanner(System.in);
 
-        int iNo = 0, iCount = 0, iTemp = 0;
+        int iNo = 0, iCount = 0, iTemp = 0, iSum = 0, iDigit = 0;
 
         System.out.println("Enter number : ");
         iNo = sobj.nextInt();// 8
