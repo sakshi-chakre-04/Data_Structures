@@ -4,11 +4,11 @@ class program819
 {
     public static boolean CheckStrong(int iNo)
     {
-        iTemp = 0 , iSum = 0, iDigit = 0;
+        int iTemp = 0 , iSum = 0, iDigit = 0;
 
         iTemp = iNo;// to store the value to compare at end
                     //   0,1,2,3,4,5,6,7,8,9
-        int FactArr[] = {1,2,6,24,120,720,5040,40320,362880};
+        int FactArr[] = {1,1,2,6,24,120,720,5040,40320,362880};
 
         // 145
         while(iNo != 0)
